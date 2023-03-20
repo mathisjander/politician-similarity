@@ -4,11 +4,7 @@ import numpy as np
 import plotly.express as px
 import streamlit as st
 from sklearn.decomposition import PCA
-import modal
 
-stub = modal.Stub("pca-app-politicians")
-
-@stub.local_entrypoint
 def main():
     df_features = pd.read_csv('data/cleaned_features.csv')
 
